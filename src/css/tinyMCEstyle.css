@@ -1,0 +1,31 @@
+
+.tiny-content1 {
+    color: grey;
+    font-size: 0.852rem;
+
+}
+
+.tiny-header {
+    font-weight: 600;
+}
+
+.tiny-footer {
+    font-style: italic;
+}
+
+.tiny-content2 {
+    font-size: 0.9rem;
+}
+
+.tiny-content2 p:last-child {
+    font-style: italic;
+}
+
+.right-bordered {
+    margin-right: 5px;
+}
+
+.dress-code-tags {
+    font-weight: 600;
+}
+ 

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/asset/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dest/css/style.css" />
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container-xl">
+            <div id="header" class="header-page">
+                <div class="wrapper-head">
+                    <h2 class="header-text">List Your Event</h2>
+                    <h3 class="sub-header-text">How it works</h3>
+                    <hr class="line-header">
+                </div>
+
+                <div class="row step-container">
+                    <div class="col tabs-md">
+                        <div class="step-box"><span class="step-number">1.</span> 
+                            <span class="step-name">List your event</span>
+                            <span class="step-tooltips" 
+                            data-tooltip-content="NYE events are not included with the Amsterdam Nightlife Ticket, but can be added for an additional cost">
+                                <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                            </span>
+                        </div>
+                        <a href="confirm.html" class="step-tab active">COMPLETE THE FORM BELOW</a>
+                    </div>
+                    <div class="col tabs-md">
+                        <div class="step-box"><span class="step-number">2.</span><span class="step-name">PROCESS &
+                                APPROVA</span>
+                            <span class="step-tooltips" data-tooltip-content="test 2">
+                                <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                            </span>
+                        </div>
+                        <a href="" class="step-tab">WITHIN 12 HOURS</a>
+                    </div>
+                    <div class="col tabs-md">
+                        <div class="step-box"><span class="step-number">3.</span><span class="step-name"></span>EVENT
+                            GOES LIVE
+                            <span class="step-tooltips" data-tooltip-content="tooltips">
+                                <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                            </span>
+                        </div>
+                        <a href="" class="step-tab">IMMEDIATELY WHEN APPROVED</a>
+                    </div>
+                    <div class="col tabs-md">
+                        <div class="step-box"><span class="step-number">4.</span><span
+                                class="step-name">MARKETING</span>
+                            <span class="step-tooltips" data-tooltip-content="tooltips">
+                                <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                            </span>
+                        </div>
+                        <a href="" class="step-tab">PLACEMENTS ARE VISABLE WITHIN 48 HOURS AFTER APPROVAL</a>
+                    </div>
+                    <div class="col tabs-md">
+                        <div class="step-box"><span class="step-number">5.</span><span class="step-name">RECEIVE
+                                GUESTS</span>
+                            <span class="step-tooltips" data-tooltip-content="tooltips">
+                                <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                            </span>
+                        </div>
+                        <a href="" class="step-tab">THE DAY OF YOUR EVENT</a>
+                    </div>
+
+                    <!-- mobile layout -->
+
+                    <div class="col tabs-sm">
+                        <a href="" class="step-box active">
+                            <div class="tabs-wrap">
+                                <span class="step-number">1.</span>
+                                <span class="step-tooltips" data-tooltip-content="test 2">
+                                    <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                                </span>
+                            </div>
+                            <span class="step-name">List your event</span>
+                        </a>
+                    </div>
+                    <div class="col tabs-sm">
+                        <a href="" class="step-box">
+                            <div class="tabs-wrap">
+                                <span class="step-number">2.</span>
+                                <span class="step-tooltips" data-tooltip-content="tooltips">
+                                    <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                                </span>
+                            </div>
+                            <span class="step-name">PROCESS & APPROVA</span>
+                        </a>
+                    </div>
+                    <div class="col tabs-sm">
+                        <a href="" class="step-box">
+                            <div class="tabs-wrap">
+                                <span class="step-number">3.</span>
+                                <span class="step-tooltips" data-tooltip-content="tooltips">
+                                    <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                                </span>
+                            </div>
+                            <span class="step-name">EVENT GOES LIVE</span>
+                        </a>
+                    </div>
+                    <div class="col tabs-sm">
+                        <a href="" class="step-box">
+                            <div class="tabs-wrap">
+                                <span class="step-number">4.</span>
+                                <span class="step-tooltips" data-tooltip-content="tooltips">
+                                    <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                                </span>
+                            </div>
+                            <span class="step-name">MARKETING</span>
+                        </a>
+                    </div>
+                    <div class="col tabs-sm">
+                        <a href="" class="step-box">
+                            <div class="tabs-wrap">
+                                <span class="step-number" data-tooltip-content="tooltips">5.</span>
+                                <span class="step-tooltips">
+                                    <img class="icon-info" src="./asset/icon/icon_info.png" alt="">
+                                </span>
+                            </div>
+                            <span class="step-name">RECEIVE GUESTS</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <form method="POST" action="confirm.html" class="needs-validation" novalidate>
+            <div class="wrapper-content">
+
+                <div class="container-xl container-content">
+                    <div id="main-content">
+                        <div class="content-left">
+                            <p class="content-title">EVENT INFORMATION</p>
+
+                            <div class="form-group" required="required">
+                                <label class="required-label" data-required="Required">
+                                <input type="text" class="form-control event-form" id="validationTooltipUsernames"
+                                    name="location-name" placeholder="*CLUB/LOCATION NAME" required>
+                                </label>
+                    
+                            </div>
+                            <div class="form-group" required="required">
+                                <label class="required-label" data-required="Required">
+                                <input type="text" class="form-control event-form" id="event-name" name="event-name"
+                                    placeholder="*EVENT NAME AND EDITION" required></label>
+                            </div>
+                            <div class="form-group">
+                                <label class="required-label" data-required="Required">
+                                <input type="text" class="form-control event-form" id="address" name="address"
+                                    placeholder="*EVENT / LOCATION ADDRESS E.G. REMBRANTPLEIN 15" required>
+                                </label>
+                            </div>                           
+                            <div class="form-group">
+                                <label class="required-label" data-required="Required">
+                                    <input type="text" class="form-control event-form datetimepicker-input" id="event-date" name="event-date"
+                                        placeholder="*EVENT DATE" data-toggle="datetimepicker" data-provide="datepicker" data-target="#event-date" readonly autocomplete="off" required>
+                                        <!-- <input class='datepicker-input' data-costume_class="dropoff" /> -->
+                                </label>                             
+                            </div>
+
+                            <div class="form-group time-picker">
+                                <label class="required-label" data-required="Required">
+                                <input type="text" class="form-control event-form" id="event-time" readonly name="event-time"
+                                    placeholder="*EVENT START TIME - EVENT END TIME" autocomplete="off" required>
+                                </label>
+                              
+                                    <div class="popover-content d-none">
+                                        <label class="event-time-label">Event Start time</label>
+                                        <div class="select-container start-date">                                           
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>                                         
+                                            <select class="custom-select event-time hours-option">
+                                                <option selected value="00">00</option>
+                                            </select>
+                                            <div class="split">:</div>
+                                            <select class="custom-select event-time min-option">
+                                                <option selected value="00">00</option>
+                                            </select>
+                                            <select class="custom-select event-time period-option">
+                                                <option selected value="AM">AM</option>
+                                                <option value="PM">PM</option>
+                                            </select>
+                                        </div>
+
+                                        <label class="event-time-label">Event End time</label>
+                                        <div class="select-container end-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>                                          
+                                            <select class="custom-select event-time hours-option">
+                                                <option selected value="00">00</option>
+                                            </select>
+                                            <div class="split">:</div>
+                                            <select class="custom-select event-time min-option">
+                                                <option selected value="00">00</option>
+                                            </select>
+                                            <select class="custom-select event-time period-option">
+                                                <option selected value="AM">AM</option>
+                                                <option value="PM">PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>           
+                           
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="sub-title-name">RECURRING EVENT</span>
+                                    <label class="toggle" data-toggle="collapse" href="#eventdate">
+                                        <input type="checkbox">
+                                        <div class="slider round" data-off="Off" data-on="On"></div>
+                                    </label>
+                                </div>
+                                <div id="eventdate" class="container collapse">
+                                    <div class="row content">                   
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date recur-event" name="recur-event" value="1">DAILY</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date recur-event" name="recur-event" value="2">WEEKLY</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date recur-event" name="recur-event" value="3">MONTHLY</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date recur-event manual-date" id="datepicker2" data-target="#datepicker2" data-toggle="datetimepicker"
+                                            name="recur-event" data-target-input="nearest">MANUAL
+                                                <i class="fa fa-calendar special" aria-hidden="true"></i>
+                                                <input type="hidden" class="form-control datetimepicker-input">
+                                            </button>
+                                        </div> 
+                                        <input type="hidden" class="form-control input-result" name="event-date-value" value="">                                                       
+                                    </div>                                    
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="required-star">*</span><span class="sub-title-name">EVENT MUSIC GENRE</span>  
+                                    <span class="sub-title-note">You can select multiple music genres</span>
+                                    <!-- <span>*Required</span> -->
+                                </div>
+                                <div class="container" id="event-music-genre">
+                                    <div class="row content">
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="HOUSE">HOUSE</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="TECHNO">TECHNO</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="EDM">EDM</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="ROCK">ROCK</button>
+                                        </div>
+                                    </div>
+                                    <div class="row content">
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="URBAN">URBAN</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="HIP-HOP">HIP-HOP</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="R&B">R&B</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date music-genre" name="music-genre" value="SALSA">SALSA</button>
+                                        </div>
+                                    </div>
+                                    <div class="row content">
+                                        <div class="col-3"><button type="button" name="music-genre"
+                                                class="btn btn-date music-genre others">OTHER</button>
+                                        </div>
+                                        <div class="col-9 no-padding">
+                                            <input type="text" class="form-control other-fields" placeholder="E.G. REGGEATON">
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="form-control input-result required" name="event-music-genre[]" required>     
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="required-star">*</span><span class="sub-title-name">EVENT DRESS CODE</span>
+                                    <!-- <span class="sub-title-note">You can select multiple music genres</span> -->
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info3.png" alt=""></span>
+                                    <span class="restrict">restrict?</span>
+                                    <label class="toggle" data-toggle="collapse" href="#restrictCollapse">
+                                        <input type="checkbox" class="restrict-toggle">
+                                        <div class="slider round" data-off="Off" data-on="On"></div>
+                                    </label>
+                                </div>
+                                <div class="container" id="event-dress-code">
+                                    <div class="row content">
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date dress-code" value="Casual" name="dress-code">CASUAL
+
+                                            </button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date dress-code" value="Smart Casual" name="dress-code">SMART CASUAL</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date dress-code" value="Party Chic" name="dress-code">PARTY CHIC</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date dress-code" value="Sexy/Class" name="dress-code">SEXY/CLASS</button>
+                                        </div>
+                                    </div>
+                                    <div class="row content">
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date dress-code others" name="dress-code">OTHER</button></div>
+                                        <div class="col-9 no-padding">
+                                            <input type="text" class="form-control other-fields" id="text-dress-code" placeholder="E.G. COCKTAILATTIRE">
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="form-control input-result required" name="event-dress-code" value=""> 
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="required-star">*</span><span class="sub-title-name">age restriction</span>
+                                    <!-- <span class="sub-title-note">You can select multiple music genres</span>  -->
+                                    
+                                </div>
+                                <div class="container" id="event-age-restriction">
+                                    <div class="row content">
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-date age" name="age" value="18+">18+</button>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-date age" name="age" value="21+">21+</button>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-date age" name="age" value="23+">23+</button>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-date age" name="age" value="25+">25+</button>
+                                        </div>
+                                    </div>
+                                    <div class="row content">
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date age others" name="age">other</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" class="form-control other-fields" placeholder="30+">
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="form-control input-result required" name="event-age-restriction" value="" required> 
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="required-star">*</span><span class="sub-title-name">AMOUNT OF AMSTERDAM NIGHTLIFE GUESTS</span>
+                                </div>
+                                <div class="container" id="event-amount-guests">
+                                    <div class="row content">
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date guests-amount" name="amount" value="20 Guests">20 GUESTS</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date guests-amount" name="amount" value="30 Guests">30 GUESTS</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date guests-amount" name="amount" value="50 Guests">50 GUESTS</button>
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date guests-amount" name="amount" value="100 Guests">100 GUESTS</button>
+                                        </div>
+                                    </div>
+                                    <div class="row content">
+                                        <div class="col-3">
+                                            <button type="button" class="btn btn-date guests-amount others" name="amount">other</button>
+                                        </div>
+                                        <div class="col-9 no-padding other-fields">
+                                            <div class="others-container">
+                                            <input class="custom-select event-time guest-other-amount" type="number" min="20">
+                                            <div class="guest-other-text">
+                                                <strong>The minimum is 20 guests.</strong>
+                                                <div>less than 20 guests available?.</div>
+                                                <div>contact us here,and let's discuss</div>                                                
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="form-control input-result required" name="event-amount-guests" value="" required> 
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="sub-title-name">LATE NIGHT TICKETS</span>
+                                    <label class="toggle late-night" data-toggle="collapse" href="#lateNigtCollapse">
+                                        <input type="checkbox" class="late-night-toggle">
+                                        <div class="slider round" data-off="Off" data-on="On"></div>
+                                    </label>
+                                </div>
+
+                                <div id="lateNigtCollapse" class="collapse">
+                                    <div class="form-group late-night-container">
+                                        <button type="button" id="scan-only" class="btn btn-date late-night-btn" name="late-night">SCAN ONLY</button>
+                                        <button type="button" id="scan-guest" class="btn btn-date late-night-btn" name="late-night">SCAN + GUESTLIST</button>
+                                    </div>
+
+                                    <div id="scan-guestlist">
+                                        <div class="form-group scan-app-username">
+                                            <input type="text" class="col-7 scan-form" name="late-night-username"
+                                                placeholder="Scan App Username" value="">
+                                            <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                    src="./asset/icon/icon_info2.png" alt=""></span>
+                                        </div>
+                                        <div class="form-group scan-app-password">
+                                            <input type="password" class="col-7 scan-form" name="late-night-password"
+                                                placeholder="Scan App Password" value="">
+                                            <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                    src="./asset/icon/icon_info2.png" alt=""></span>
+                                        </div>
+                                        <div class="form-group scan-app-email">
+                                            <input type="email" class="col-7 scan-form" name="late-night-email"
+                                                placeholder="Guestlist notification email address" value="">
+                                            <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                    src="./asset/icon/icon_info2.png" alt=""></span>
+                                         </div>
+
+                                         <div class="event-start" id="late-night-date">
+                                            <div class="event-start-text">Time the guestlist email wil be sent</div>
+                                            <div class="select-container">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                <input type="hidden" name="late-night-start-date" value="" class="scan-form">
+                                                <select class="custom-select event-time hours-option">
+                                                    <option selected value="09">09</option>
+                                                </select>
+                                                <div class="split">:</div>
+                                                <select class="custom-select event-time min-option">
+                                                    <option selected value="00">00</option>
+                                                </select>
+                                                <select class="custom-select event-time period-option">
+                                                    <option selected value="PM">PM</option>
+                                                    <option value="AM">AM</option>
+                                                </select>
+                                                <div class="event-start-note">by default the notication is set ti 9PM on
+                                                    event
+                                                    srart date recommeded
+                                                    to set a time after 9PM.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+     
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="error-message">*Please select this or above at least one.</div>
+                                <div class="notify-container">
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="required-star">*</span><span class="sub-title-name">ticket scan and notification</span>
+                                </div>
+                                <div class="notify-content">
+                                    <div class="form-group late-night-container">
+                                        <button type="button" id="notify-scan-only" class="btn btn-date notify-btn" 
+                                        name="notification">SCAN ONLY</button>
+                                        <button type="button" id="notify-guest-only" class="btn btn-date notify-btn" 
+                                        name="notification">GUESTLIST only</button>
+                                        <button type="button" id="notify-guestlist" class="btn btn-date notify-btn" 
+                                        name="notification">SCAN + GUESTLIST</button>
+                                    </div>
+                                </div>
+
+                                <div id="notificationCollapse">
+                                    <div class="form-group scan-app-username">
+                                        <input type="text" class="col-7 scan-form" name="notify-username"
+                                            placeholder="Scan App Username" value="">
+                                        <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                src="./asset/icon/icon_info2.png" alt=""></span>
+                                    </div>
+                                    <div class="form-group scan-app-password">
+                                        <input type="password" class="col-7 scan-form" name="notify-password"
+                                            placeholder="Scan App Password" value="">
+                                        <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                src="./asset/icon/icon_info2.png" alt=""></span>
+                                    </div>
+                                    <div class="form-group scan-app-email">
+                                        <input type="email" class="col-7 scan-form" name="notify-email"
+                                            placeholder="Guestlist notification email address" value="">
+                                        <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                src="./asset/icon/icon_info2.png" alt=""></span>
+                                     </div>
+
+                                     <div class="event-start" id="event-notify-date">
+                                        <div class="event-start-text">Time the guestlist email wil be sent</div>
+                                        <div class="select-container">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <input type="hidden" name="notify-start-date" value="" class="scan-form">
+                                            <select class="custom-select event-time hours-option" id="test009">
+                                                <option selected value="09">09</option>
+                                            </select>
+                                            <div class="split">:</div>
+                                            <select class="custom-select event-time min-option">
+                                                <option selected value="00">00</option>
+                                            </select>
+                                            <select class="custom-select event-time period-option">
+                                                <option value="AM">AM</option>
+                                                <option selected value="PM">PM</option>
+                                                
+                                            </select>
+                                            <div class="event-start-note">by default the notication is set to 9PM on
+                                                event
+                                                srart date recommeded
+                                                to set a time after 9PM.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+                    </div>
+
+<!------------------------------------------ right side -------------------------------------------->
+
+                    <div class="vertical"></div>
+                    <div class="horizontal"></div>
+                    <div id="main-content" class="window-right">
+                        <div class="content-right">
+                            <div class="content-title">EVENT PROMOTION MATERIAL</div>
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="sub-title-name upload-title"> <span>*</span> Upload Event photos for ticket design</span>
+                                    <span class="sub-title-note">min 1 - max 4</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5 upload-wrap">
+                                        <form id="form1" runat="server">
+                                            <div class="upload-container">
+                                                <div class="upload-btn">
+                                                    <input type='file' class="file-input upload-template" data-upload-index="1" accept="image/*" name="template-img01"/>
+                                                    <div id='img_contain'>
+                                                        <img id="" class="image-preview" src="./asset/icon/upload_default.png"
+                                                            alt="your image" title='' />
+                                                    </div>
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                     </button>
+                                                    <span class="added"><img src="./asset/icon/uploaded.png"></span>
+                                                    <span class="order-number">1.</span>
+                                                </div>
+                                                <div class="upload-btn">
+                                                    <input type='file' class="file-input upload-template" data-upload-index="2" accept="image/*" name="template-img02"/>
+                                                    <div id='img_contain'>
+                                                        <img id="" class="image-preview" src="./asset/icon/upload_default.png"
+                                                            alt="your image" title='' />
+                                                    </div>
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                     </button>
+                                                    <span class="added"><img src="./asset/icon/uploaded.png"></span>
+                                                    <span class="order-number">2.</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="upload-container">
+                                                <div class="upload-btn">
+                                                    <input type='file' class="file-input upload-template" data-upload-index="3" accept="image/*" name="template-img03"/>
+                                                    <div id='img_contain'>
+                                                        <img id="" class="image-preview" src="./asset/icon/upload_default.png"
+                                                            alt="your image" title='' />
+                                                    </div>
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                     </button>
+                                                    <span class="added"><img src="./asset/icon/uploaded.png"></span>
+                                                    <span class="order-number">3.</span>
+                                                </div>
+                                                <div class="upload-btn">
+                                                    <input type='file' class="file-input upload-template" data-upload-index="4" accept="image/*" name="template-img04"/>
+                                                    <div id='img_contain'>
+                                                        <img id="" class="image-preview" src="./asset/icon/upload_default.png"
+                                                            alt="your image" title='' />
+                                                    </div>
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                     </button>
+                                                    <span class="added"><img src="./asset/icon/uploaded.png"></span>
+                                                    <span class="order-number">4.</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-7 preview-wrap">
+                                        <div class="preview-container">
+                                            <span class="icon-info-container"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                            <img class="template-preview template-on" src="./asset/img/template.png" alt="">
+                                            <img class="template-preview wellcome-shot" src="./asset/img/template3.png" alt="">
+                                            <img class="template-preview template-off" src="./asset/img/Melkweg_ENCORE_CUTED.png" alt="">
+                                            <span class="last-preview">
+                                                <span class="img-pre1"></span>
+                                                <span class="img-pre2"></span>
+                                                <span class="img-pre3"></span>
+                                                <span class="img-pre4"></span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="sub-title-name">Guestlist Ticket Design</span>
+                                    <label class="toggle template-active">
+                                        <input type="checkbox" class="guestlist-toggle">
+                                        <div class="slider round" data-off="Off" data-on="On"></div>
+                                    </label>
+
+                                    <hr>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="sub-title-name logo-upload-title"><span>*</span>Upload Image And Logo For Event Calendar</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                       
+                                            <div class="logo-upload-container">
+                                                <div class="logo-upload-btn">
+                                                    <input type='file' class="file-input template-input" value="Choose Image" accept="image/*" name="event-img"/>
+                                                    <div class="btn-layout">
+                                                        <div id='logo-img-contain'>
+                                                            <img id="logo-image-preview"
+                                                                src="./asset/icon/upload_icon.png" alt="your image"
+                                                                title='' />
+                                                        </div>
+                                                        <div class="upload-btn-name">Event Image</span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="insert-complete"><img src="./asset/icon/uploaded.png" alt=""></span>
+                                                </div>
+                                                <div class="logo-upload-btn">
+                                                    <input type='file' class="file-input logo-input"  value="Choose Image" accept="image/*" name="event-logo-img"/>
+                                                    <div class="btn-layout">
+                                                        <div id='logo-img-contain'>
+                                                            <img id="logo-image-preview"
+                                                                src="./asset/icon/upload_icon.png" alt="your image"
+                                                                title='' />
+                                                        </div>
+                                                        <div class="upload-btn-name">Event Logo/location</span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="insert-complete"><img src="./asset/icon/uploaded.png" alt=""></spanclass="insert-complete">
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+
+                                    <div class="col-8">
+                                        <span id="sub-cropper"></span>
+                                        <div class="logo-preview-wrap" id="main-cropper">
+                                            <!-- <div class="template-image">
+                                                <img src="./asset/img/preview-logo-template.png" alt="logo-preview"/>
+                                            </div> -->
+                                            
+                                            <div class="template-logo">
+                                                <div class="preview top-right">
+                                                    <div class="logo-text">LOGO</div>
+                                                    <divp>MAX:100PX-75PX
+                                                </div>
+    
+                                                <div class="preview middle">
+                                                    <div class="logo-text">IMAGE</div>
+                                                    <div>MIN:700PX-200PX</div>
+                                                </div>
+                                                <div class="preview bottom">
+                                                    <div>Preview Event Banner appears when images are uploaded</div>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                   <!-- <span class="required-star">*</span>  -->
+                                   <span class="sub-title-name">Event Description Text</span>
+                                    <span class="dropdown">
+                                        <a class="flag-btn" href="#" role="button" id="dropdownFlag" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span data-bind="label"> <img class="flag-icon" src="./asset/icon/flags/us.png" alt="">
+                                                </span><img class="down-toggle" src="./asset/icon/arrow-down-angle.png" alt="">
+                                           
+                                        </a>
+                                      
+                                        <div class="dropdown-menu flag-dropdown" aria-labelledby="dropdownFlag">
+                                          <a class="dropdown-item" href="#"><img class="flag-icon" src="./asset/icon/flags/us.png" alt="" value="us"></a>
+                                          <a class="dropdown-item" href="#"><img class="flag-icon" src="./asset/icon/flags/it.png" alt="" value="it"></a>
+                                          <a class="dropdown-item" href="#"><img class="flag-icon" src="./asset/icon/flags/nl.png" alt="" value="nl"></a>
+                                          <a class="dropdown-item" href="#"><img class="flag-icon" src="./asset/icon/flags/gb.png" alt="" value="gb"></a>
+                                          <a class="dropdown-item" href="#"><img class="flag-icon" src="./asset/icon/flags/fr.png" alt="" value="fr"></a>
+                                          <a class="dropdown-item" href="#"><img class="flag-icon" src="./asset/icon/flags/es.png" alt="" value="es"></a>
+                                        </div>
+                                    </span>
+                                    <span class="sub-title-note">min 200 charecters</span>
+                                </div>
+
+                                <input type="hidden" name="Event-description[0].Language" value="us" />
+                                <!-- <input type="hidden" name="Event-description[0].text" value="" /> -->
+                                <textarea id="tiny-field1" class="tiny-field" name="Event-description[0].text"></textarea>
+
+                                <input type="hidden" name="Event-description[1].Language" value="it" />
+                                <textarea id="tiny-field2" class="tiny-field" name="Event-description[1].Text"></textarea>
+
+                                <input type="hidden" name="Event-description[2].Language" value="nl" />
+                                <textarea id="tiny-field3" class="tiny-field" name="Event-description[2].Text"></textarea>
+
+                                <input type="hidden" name="Event-description[3].Language" value="gb" />
+                                <textarea id="tiny-field4" class="tiny-field" name="Event-description[3].Text"></textarea>
+
+                                <input type="hidden" name="Event-description[4].Language" value="fr" />
+                                <textarea id="tiny-field5" class="tiny-field" name="Event-description[4].Text"></textarea>
+
+                                <input type="hidden" name="Event-description[5].Language" value="es" />
+                                <textarea id="tiny-field6" class="tiny-field" name="Event-description[5].Text"></textarea> 
+                                
+
+                                <div class="confirm-button"><button class="btn btn-danger submit-text">confirm</button></div>
+                                <div id="values"></div>                               
+                                <hr>
+                            </section>
+
+                            <section>
+                                <div class="sub-title-label">
+                                    <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                            src="./asset/icon/icon_info2.png" alt=""></span>
+                                    <span class="sub-title-name">Free Welcome Shot</span>
+                                    <label class="toggle" data-toggle="collapse" href="#">
+                                        <input type="checkbox" class="free-shot-toggle">
+                                        <div class="slider round" data-off="Off" data-on="On"></div>
+                                    </label>
+                                </div>
+
+                                <hr>
+                            </section>
+
+                            <section>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="social-title-warp">
+                                            <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                    src="./asset/icon/icon_info2.png" alt=""></span>
+                                            <span class="social-title">Facebook Event Id</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="social-title-warp">
+                                            <span class="sub-title-icon" data-tooltip-content="tooltips"><img class="icon-info2"
+                                                    src="./asset/icon/icon_info2.png" alt=""></span>
+                                            <span class="social-title">GMAIL FOR SOCIAL AND PROMOTION</span>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="social-box">
+                                            <input class="form-control social-input" type="text"
+                                                placeholder="E.G. 1241209706075189" name="facebook-id">
+                                            <div class="social-text">where can i find this?</div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="social-box">
+                                            <input class="form-control social-input" type="email"
+                                                placeholder="jansmit@gmail.com" name="social-email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="submit-container">
+                    <div class="check-required">*Please fill a valid value for all required fields.</div>
+                    <button type="submit" class="btn submit-button" id="submitButton">
+                        <div class="submit-btn-wrap">
+                            <img src="./asset/icon/upload complete 4 copy.png" alt=""> List my event
+                            <img class="arrow-right" src="./asset/icon/arrow_right.png" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <footer></footer>
+    </div>
+
+    <script src="js/popper.js/dist/umd/popper.min.js"></script>  
+    <script src="asset/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="dest/js/bundle.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>  
+
+</body>
+
+</html>

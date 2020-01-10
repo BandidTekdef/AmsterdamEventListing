@@ -1,0 +1,29 @@
+{
+  "name": "amsterdameventlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-select": "^1.13.12",
+    "croppie": "^2.6.4",
+    "exif-js": "^2.3.0",
+    "gulp-jquery": "^1.1.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}
