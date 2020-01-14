@@ -273,6 +273,8 @@ $(function () {
                 }
             });
 
+            
+
 
         }
     }
@@ -506,13 +508,9 @@ $(function () {
                     $(parent).find('.other-fields').hide();
                 }
             }
-
-
         }
-
         
         $('[name="recur-event"], [name="music-genre"], [name="dress-code"], [name="age"], [name="amount"], [name="late-night"], [name="notification"]').on("click" , function (e) {
-            //e.stopPropagation();
             btnToggle(this);
         });
     };
@@ -642,28 +640,32 @@ $(function () {
     }
 
     function cropImage() {
-        var basic = $('#main-cropper').croppie({
+        var event_Image = $('#main-cropper').croppie({
             enableExif: true,
             viewport: { width: 100 + '%', height: 100 + '%' },
             boundary: { width: 100 + '%', height: 100 + '%' },
             showZoomer: false
         });
 
-        $('#sub-cropper').croppie({
+        var logo_Image = $('#sub-cropper').croppie({
             enableExif: true,
-            viewport: { width: 100, height: 30},
-            boundary: { width: 100, height: 30},
-            showZoomer: false
+            viewport: { width: 100, height: 55 },
+            boundary: { width: 100, height: 55 },
+            enableOrientation: true,
+            showZoomer: false,
+            
         });
-        
+
         var readFile = function (input) {
           if (input.files && input.files[0]) {
               var reader = new FileReader();
               var filterType = /^(?:image\/bmp|image\/cis\-cod|image\/gif|image\/+ief|image\/jpeg|image\/jpeg|image\/jpeg|image\/pipeg|image\/png|image\/svg\+xml|image\/tiff|image\/x\-cmu\-raster|image\/x\-cmx|image\/x\-icon|image\/x\-portable\-anymap|image\/x\-portable\-bitmap|image\/x\-portable\-graymap|image\/x\-portable\-pixmap|image\/x\-rgb|image\/x\-xbitmap|image\/x\-xpixmap|image\/x\-xwindowdump)$/i;
+            
               reader.onload = function (e) {
+                //call function
                   if ($(input).hasClass('logo-input')) {
                       $('#sub-cropper').croppie('bind', {                     
-                          url: e.target.result                        
+                          url: e.target.result
                       });       
                   }                  
                   else {                    
@@ -689,6 +691,29 @@ $(function () {
             reader.readAsDataURL(input.files[0]);
           }
         }
+
+        /* Send crop to preview modal */
+        $('#submitButton').on('click', function (ev) {
+            event_Image.croppie('result', {
+                type: 'canvas',
+                size: 'original',
+                quality: 1 
+            }).then(function (resp) {
+                $('#eventCoverImg').val(resp);
+            });
+
+            logo_Image.croppie('result', {
+                type: 'canvas',
+                size: {width: 100, height: 75},
+                quality: 1 
+            }).then(function (resp) {
+                $('#eventLogoImg').val(resp);
+               // var picture = $("#showImagePreview img");
+               // picture.attr('src', resp);
+            });
+        });
+
+
         
         $('.template-input, .logo-input').on('change', function () {
             readFile(this);

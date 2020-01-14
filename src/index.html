@@ -654,7 +654,7 @@
                                        
                                             <div class="logo-upload-container">
                                                 <div class="logo-upload-btn">
-                                                    <input type='file' class="file-input template-input" value="Choose Image" accept="image/*" name="event-img"/>
+                                                    <input type='file' class="file-input template-input" value="Choose Image" accept="image/*"/>
                                                     <div class="btn-layout">
                                                         <div id='logo-img-contain'>
                                                             <img id="logo-image-preview"
@@ -667,7 +667,7 @@
                                                     <span class="insert-complete"><img src="./asset/icon/uploaded.png" alt=""></span>
                                                 </div>
                                                 <div class="logo-upload-btn">
-                                                    <input type='file' class="file-input logo-input"  value="Choose Image" accept="image/*" name="event-logo-img"/>
+                                                    <input type='file' class="file-input logo-input"  value="Choose Image" accept="image/*"/>
                                                     <div class="btn-layout">
                                                         <div id='logo-img-contain'>
                                                             <img id="logo-image-preview"
@@ -686,14 +686,10 @@
                                     <div class="col-8">
                                         <span id="sub-cropper"></span>
                                         <div class="logo-preview-wrap" id="main-cropper">
-                                            <!-- <div class="template-image">
-                                                <img src="./asset/img/preview-logo-template.png" alt="logo-preview"/>
-                                            </div> -->
-                                            
                                             <div class="template-logo">
                                                 <div class="preview top-right">
                                                     <div class="logo-text">LOGO</div>
-                                                    <divp>MAX:100PX-75PX
+                                                    <div>MAX:100PX-75PX</div>
                                                 </div>
     
                                                 <div class="preview middle">
@@ -707,6 +703,14 @@
                                            
                                         </div>
                                     </div>
+<!-- 
+                                    <button type="submit" id="test-submit">test</button>
+
+                                    <div id="showImagePreview">
+                                        <img src="" alt="" class="croppedImage" />
+                                    </div> -->
+                                    <input type="hidden" id="eventCoverImg" name="event-cover-img">
+                                    <input type="hidden" id="eventLogoImg" name="event-logo-img">
 
                                 </div>
                                 <hr>
@@ -738,7 +742,6 @@
                                 </div>
 
                                 <input type="hidden" name="Event-description[0].Language" value="us" />
-                                <!-- <input type="hidden" name="Event-description[0].text" value="" /> -->
                                 <textarea id="tiny-field1" class="tiny-field" name="Event-description[0].text"></textarea>
 
                                 <input type="hidden" name="Event-description[1].Language" value="it" />
