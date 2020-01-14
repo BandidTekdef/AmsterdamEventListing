@@ -1,5 +1,7 @@
 $(function () {
 
+    var idx = 1;
+
     function timePickerPopOver() {
         var datePickerPopup = $('.popover-content').children();
         var options = {
@@ -77,10 +79,7 @@ $(function () {
 
 
     function getValueFromToggle() {
-        var a = $('#event-notify-date');
-        
-      //  $('#event-notify-date option[value="${YourValue}"]').prop('selected', true);
-        
+
         $('.late-night-toggle').click(function () { 
             if ($(this).prop("checked") === true) {
                 $('.late-night-btn').removeClass('active');
@@ -91,9 +90,6 @@ $(function () {
                 $('input[name="scan-app-username"]').val("");
                 $('input[name="scan-app-password"]').val("");
                 $('input[name="scan-app-email"]').val("");
-               
-               // $('input[name="scan-app-start-date"]').val("");
-               // $('#scan-guestlist').find('select').val("");
             }
 
             else {
@@ -105,8 +101,6 @@ $(function () {
                 $('input[name="late-night-username"]').val("");
                 $('input[name="late-night-password"]').val("");
                 $('input[name="late-night-email"]').val("");
-              //  $('input[name="late-night-start-date"]').val(""); 
-              //  $('#notificationCollapse').find('select').val("");
             }
         });
 
@@ -119,7 +113,6 @@ $(function () {
             $('.event-start').hide();  
             $('input[name="late-night-email"]').val("");    
             $('input[name="late-night-start-date"]').val("");
-          //  $('#scan-guestlist').find('select').val("");
         });
 
         $('#scan-guest').click(function () {
@@ -133,7 +126,6 @@ $(function () {
             $('#late-night-date').find('.min-option option[value="00"]').prop('selected', true);
             $('#late-night-date').find('.period-option option[value="PM"]').prop('selected', true);
             $('#late-night-date').find('.scan-form').val("09:00 PM");
-           // console.log($('input[name="late-night-start-date"]').val())
         });
 
         $('#notify-scan-only').click(function () {
@@ -161,8 +153,6 @@ $(function () {
             $('#event-notify-date').find('.min-option option[value="00"]').prop('selected', true);
             $('#event-notify-date').find('.period-option option[value="PM"]').prop('selected', true);
             $('#event-notify-date').find('.scan-form').val("09:00 PM");
-
-          //  console.log('a', $('input[name="notify-start-date"]').val());
         });
 
         $('#notify-guestlist').click(function () {
@@ -176,7 +166,6 @@ $(function () {
             $('#event-notify-date').find('.min-option option[value="00"]').prop('selected', true);
             $('#event-notify-date').find('.period-option option[value="PM"]').prop('selected', true);
             $('#event-notify-date').find('.scan-form').val("09:00 PM");
-            //console.log($('input[name="notify-start-date"]').val());
         });
     }
 
@@ -282,7 +271,6 @@ $(function () {
     function validateForm() {      
         // ('.input-group.date').datepicker({format: "dd.mm.yyyy"});
         $(".needs-validation").on("submit", function (e) {
-
             var hasError = false; 
             var hasValue = false;
             var checkInputFile = false;
@@ -708,8 +696,6 @@ $(function () {
                 quality: 1 
             }).then(function (resp) {
                 $('#eventLogoImg').val(resp);
-               // var picture = $("#showImagePreview img");
-               // picture.attr('src', resp);
             });
         });
 
@@ -780,7 +766,6 @@ $(function () {
     }
 
     function onKeyupOtherField() {
-
         $('#text-dress-code').on('keypress change', function(event) {
             var $body = $(tinymce.get('tiny-field'+ idx).getBody());
             var input = $("#text-dress-code").val();
@@ -789,10 +774,6 @@ $(function () {
         });
 
     }
-
-  
-
-  //  $('.tiny-field').each(function())
 
     function onToggleButton() {
         $('.guestlist-toggle').change(function () {
@@ -830,9 +811,8 @@ $(function () {
                                     '<p>The Afro, Latin, Dancehall, Pop hits alternate nicely, with a wonderful touch of feel-good Urban'+
                                         'so that you can dance full steam into the weekend full of positive energy.</p>' +
                                     '<p class="tiny-footer">The motto is: Get yourself on the dance floor & have a good time!</p>'+
-                                    '</div>';
+                        '</div>';
                     
-                    // var $body = $(tinymce.get('tiny-field').getBody());
                         var activeEditor = tinyMCE.get('tiny-field'+ idx);
                         if(activeEditor!==null){
                             activeEditor.setContent(templateA);
@@ -846,7 +826,6 @@ $(function () {
 
         $(".btn-date.dress-code").click(function (element) {
             var getResult = '';
-            //var isOther = $(this).hasClass('others');
             var isActive = $(this).hasClass('active');
             var $body = $(tinymce.get('tiny-field'+ idx).getBody());
             getResult = $(this).val();
@@ -973,9 +952,6 @@ $(function () {
                idx = 6;
            }
            
-            //var activeEditor = tinyMCE.get('tiny-field' + idx);
-            //activeEditor.setContent("");
-           
           tinymce.editors['tiny-field' + idx].show();
          
            for (var i = 1; i <= 6; i++) {
@@ -991,7 +967,7 @@ $(function () {
            return false;
         });
     }
-    var idx = 1;
+    
     function run() {
         var context = this;
         
