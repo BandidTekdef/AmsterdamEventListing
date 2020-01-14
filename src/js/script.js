@@ -19,7 +19,7 @@ $(function () {
 				
             //Use each to hide Popovers with the same class
              $('.time-picker').each(function(index, elm) {
-                        hidePopover(elm, e);
+                hidePopover(elm, e);
             }); 
         });
     
