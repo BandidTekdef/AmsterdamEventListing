@@ -23,7 +23,7 @@
     "croppie": "^2.6.4",
     "exif-js": "^2.3.0",
     "gulp-jquery": "^1.1.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.0"
   }
 }
